@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    background-color: #EDF2F7;
+    
+    font-size: 1em;
+    color: #4A5568;
+ }
+
+
+/* nav section  */
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Set the maximum height for the logo */
+}
+
+.mylogo{
+
+    width: 200px;
+    height: 100px;
+
+}
+.navbar {
+    background-color: #28282a; /* Dark background color */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text color for nav items */
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar-toggler {
+        margin-top: 8px; /* Adjust the margin for the toggle button on smaller screens */
+    }
+}
+
+/* about section start */
+
+.home-section {
+    background-image: url('assets/img/header-bg.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    color: #ffffff; /* Set text color for better contrast */
+    padding: 100px 0; /* Adjust the padding as needed */
+    text-align: center; /* Center the text content */
+    height: 500px;
+}
+
+/* Additional styles for text in the About Us section */
+.home-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+}
+
+
+/* services section  */
+
+/* Custom Styles */
+
+
+.services{
+
+    width: 100%;
+    height: fit-content;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+
+.card-icon {
+    color: #ffc107; /* Yellow color for Font Awesome icons */
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.col
+{
+    border: none;
+}
+
+/* teams section  */
+
+.circular-img {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.circular-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* logo section  */
+
+.logo-img{
+    width: 60px;
+    height: 50px;
+}
+
+.logo-img img{
+    width: 90%;
+    height: 90%;
+}
+
+/* contact section */
+
+.contact-section {
+    background-image: url('https://i.graphicmama.com/blog/wp-content/uploads/2018/06/18112019/Grayscale-World-Map-Vector.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    height: fit-content;
+    width: 100vw;
+
+}
+
+.ft-size {
+    font-size: 90%;
+}
+
+@media (max-width: 765px) {
+    .ft-size {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 643px) {
+    .ft-size {
+        font-size: 50%;
+    }
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* about section */
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px; /* Restrict the width on large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 30px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #e9ecef;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.containers{
+    position: relative;
+    width: 50%;
+    min-height: 120px;
+}
+.containers-left {
+    left: 0;
+    padding-right: 70px;
+    text-align: right;
+}
+.containers-right {
+    left: 50%;
+    padding-left: 70px;
+    text-align: left;
+}
+.content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.containers .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 35px;
+    width: 0;
+    z-index: 1;
+    border: medium solid #e9ecef;
+}
+.containers-left .content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e9ecef;
+}
+.containers-right .content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e9ecef transparent transparent;
+}
+.image {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    border: solid 5px #e9ecef;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.containers-left .image {
+    right: 0;
+    margin-right: -45px;
+}
+.containers-right .image {
+    left: 0;
+    margin-left: -45px;
+}
+.content span {
+    color: #2C7A7B;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.content h2 {
+    font-size: 1.8em;
+    padding-top: 5px;
+}
+.content p {
+    line-height: 1.6;
+    padding-top: 5px;
+}
+@media screen and (max-width: 767px) {
+    .timeline::after {
+        left: 65px;
+    }
+    .containers {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .containers:first-of-type {
+        margin-top: 0px;
+    }
+    .containers-right {
+        left: 0%;
+    }
+    .containers-left {
+        text-align: left;
+    }
+    .containers .image {
+        left:-10px;
+        top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .containers-left .content::before {
+        left: -10px;
+        right: auto;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #e9ecef transparent transparent;
+    }
+}
+@media screen and (max-width: 480px) {
+    .containers {
+        padding-left: 0px;
+        padding-top: 105px;
+        z-index: 3;
+    }
+    .containers .content::before {
+        left: 25px;
+        top: -10px;
+        border: medium solid #e9ecef;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #e9ecef transparent;
+    }
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
